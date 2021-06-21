@@ -19,5 +19,5 @@ def browser(request):
         fp = webdriver.FirefoxProfile()
         browser = webdriver.Firefox(firefox_profile=fp)
     yield browser
-    time.sleep(3)
+    time.sleep(1)
     browser.quit()

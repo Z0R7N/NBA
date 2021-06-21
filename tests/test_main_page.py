@@ -2,8 +2,8 @@ from pages.login_page import LoginPage
 from pages.main_page import MainPage
 
 
-class TestLoginFromMainPage():
-    def test_guest_can_login_to_account(self, browser):
+class TestMainPage():
+    def test_user_can_login_to_account(self, browser):
         link = "https://www.nba.com/"
         page = MainPage(browser, link)
         page.open()
