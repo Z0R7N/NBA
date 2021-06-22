@@ -5,6 +5,8 @@ from pages.locators import StorePageLocators
 class StorePage(BasePage):
     def should_be_guest_can_add_item_to_cart(self):
         self.should_be_guest_can_accept_region_location()
+        self.should_be_guest_can_accept_cookie()
+        self.should_be_guest_can_choose_group_store()
         self.should_be_guest_can_click_item_link()
 
     def should_be_guest_can_accept_region_location(self):
