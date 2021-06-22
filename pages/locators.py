@@ -14,3 +14,9 @@ class LoginPageLocators():
     PASSWORD_FIELD = (By.CSS_SELECTOR, "#nbaLoginModalPw")
     BUTTON_SIGN_IN = (By.CSS_SELECTOR, "#nbaLoginModalSignIn")
     ACCOUNT_MANAGE = (By.CSS_SELECTOR, "#iptv_content")
+
+
+class StorePageLocators():
+    ACCEPT_LOCATION = (By.CSS_SELECTOR, ".modal-content .responsive-image img")
+    ACCEPT_COOKIE = (By.CSS_SELECTOR, ".cookie-consent-container-v2 .cookie-accept-button")
+    SHOP_BY_TEAM = (By.CSS_SELECTOR, "#0")

@@ -20,3 +20,4 @@ class TestMainPage():
 
 # python -m pytest -v --tb=line
 # python -m pytest -v -s
+# python -m pytest -v --tb=line tests/test_main_page.py
