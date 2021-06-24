@@ -9,3 +9,4 @@ class TestStorePage():
         store_page.should_be_guest_can_add_item_to_cart()
 
 # python -m pytest -v --tb=line tests/test_store_page.py
+# python -m pytest -v -s tests/test_store_page.py

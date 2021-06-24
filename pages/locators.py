@@ -19,4 +19,9 @@ class LoginPageLocators():
 class StorePageLocators():
     ACCEPT_LOCATION = (By.CSS_SELECTOR, ".modal-content .responsive-image img")
     ACCEPT_COOKIE = (By.CSS_SELECTOR, ".cookie-consent-container-v2 .cookie-accept-button")
-    SHOP_BY_TEAM = (By.CSS_SELECTOR, "#0")
+    SHOP_BY_TEAM = (By.CSS_SELECTOR, ".top-nav-item-link")
+    BY_CONFERENCE = (By.CSS_SELECTOR, ".dropdown-column .dropdown-link-text")
+    POPUP_SALE_CLOSE = (By.CSS_SELECTOR, ".pointer .responsive-image .stateful-image")
+    STORE_ITEM = (By.CSS_SELECTOR, ".modal-close-button")
+    SIZE_SELECTOR = (By.CSS_SELECTOR, ".size-selector-button")
+    BUTTON_ADD_TO_CART = (By.CSS_SELECTOR, ".button.large.primary")
