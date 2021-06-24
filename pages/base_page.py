@@ -1,3 +1,5 @@
+import time
+
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import ActionChains
 
@@ -22,3 +24,8 @@ class BasePage():
         action = ActionChains(self.browser)
         element = self.browser.find_element(*locator)
         action.move_to_element(element).click().perform()
+
+    def find_price_item(self, locator):
+        time.sleep(1)
+        price = self.browser.find_element(*locator).text
+        return price

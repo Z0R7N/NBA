@@ -13,11 +13,9 @@ class StorePage(BasePage):
         self.should_be_guest_can_accept_cookie()
         self.should_be_guest_can_mouse_over_group()
         self.should_be_guest_can_choose_group_store()
-        time.sleep(7)
-        # self.should_be_guest_can_close_popup_sale()
+        self.should_be_guest_can_close_popup_sale()
         self.should_be_guest_can_click_item_link()
         self.should_be_guest_can_choose_size()
-        self.should_be_guest_can_click_button_add_to_cart()
 
     def should_be_guest_can_accept_region_location(self):
         if self.is_element_present(StorePageLocators.ACCEPT_LOCATION):
@@ -44,3 +42,6 @@ class StorePage(BasePage):
 
     def should_be_guest_can_click_button_add_to_cart(self):
         self.browser.find_element(*StorePageLocators.BUTTON_ADD_TO_CART).click()
+
+    def should_be_price_is_equal(self, price1, price2):
+        assert price1 == price2, "price is not equal"
