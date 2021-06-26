@@ -19,7 +19,7 @@ class MainPage(BasePage):
         if self.is_element_present(MainPageLocators.NBA_LINK):
             self.browser.find_element(*MainPageLocators.NBA_LINK).click()
 
-    def should_be_switch_frame(self):
+    def should_be_accept_cookie(self):
         if self.is_element_present(MainPageLocators.MESSAGE_ACCEPT):
             self.browser.find_element(*MainPageLocators.MESSAGE_ACCEPT).click()
 

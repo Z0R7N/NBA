@@ -8,7 +8,7 @@ class TestMainPage():
         page = MainPage(browser, link)
         page.open()
         page.should_be_correct_url()
-        page.should_be_switch_frame()
+        page.should_be_accept_cookie()
         page.should_be_click_link_account()
         page.should_be_click_link_enter_sign_in()
         login_page = LoginPage(browser, browser.current_url)
