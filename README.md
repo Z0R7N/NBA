@@ -5,10 +5,11 @@ python pytest selenium webdriver
 #### Test Suit  
 test case: 001
 
-file - test_main_page.py  
+file   - test_main_page.py  
 method - test_user_can_login_to_account
 
-Open page nba.com, click link "Sign in", enter login and password, click button "SIGN IN"
+Open page https://www.nba.com/, click link "Sign in", enter login and password,  
+click button "SIGN IN"
 
 1) Open page - https://www.nba.com/
 2) If url is wrong click link - NBA.COM
@@ -25,10 +26,11 @@ Actual result: element "My NBA Account" is visible
 _________
 test case: 002
 
-file - test_store_page.py  
+file   - test_store_page.py  
 method - test_guest_can_add_item_to_cart  
 
-Open page nbastore.eu, choose group of store, choose item, add item to cart, check item price and cart price  
+Open page https://www.nbastore.eu/, choose group of store, choose item,  
+add item to cart, check item price and cart price  
 
 1) Open page - https://www.nbastore.eu/
 2) Click button "Continue" in popup window
@@ -43,3 +45,23 @@ Open page nbastore.eu, choose group of store, choose item, add item to cart, che
 
 Expected result: the price is the same for the item and in the cart  
 Actual result: the price is the same for the item and in the cart
+_____________
+test case: 003  
+
+file   - test_game_page.py
+method - test_guest_can_choose_game
+
+Open page https://www.nba.com/, click link "Games", click dropdown menu "month year",  
+click any date with game, check text "BOX SCORE" is visible
+
+1) Open page - https://www.nba.com/
+2) If url is wrong click link "NBA.COM"
+3) Click "Accept" cookie
+4) Click link "Games"
+5) Close popup window if there is
+6) Click dropdown menu "month year"
+7) Click any date with game
+8) Check link with text "BOX SCORE" is visible
+
+Expected result: Text "BOX SCORE" is visible  
+Actual result: 
