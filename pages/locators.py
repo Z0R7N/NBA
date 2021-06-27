@@ -7,6 +7,7 @@ class MainPageLocators():
     NBA_LINK = (By.CSS_SELECTOR, "#global-nav-1 .nba-site a")
     MESSAGE_ACCEPT = (By.CSS_SELECTOR, "#onetrust-button-group #onetrust-accept-btn-handler")
     MENU_ACCOUNT = (By.CSS_SELECTOR, "#nbaMenuMyAccount")
+    GAMES_LINK = (By.CSS_SELECTOR, ".NavItem_link__1AMKN.Anchor_complexLink__2NtkO")
 
 
 class LoginPageLocators():
@@ -27,3 +28,10 @@ class StorePageLocators():
     BUTTON_ADD_TO_CART = (By.CSS_SELECTOR, ".button.large.primary")
     ITEM_PRICE = (By.CSS_SELECTOR, ".layout-row.pdp-price .money-value")
     CART_PRICE = (By.CSS_SELECTOR, ".shipping-val")
+
+
+class GamesPageLocators():
+    CLOSE_POPUP_WINDOW = (By.CSS_SELECTOR, ".ab-close-button > svg")
+    CALENDAR_DROPDOWN = (By.CSS_SELECTOR, ".text-center.text-sm.font-black.flex-auto")
+    DATE_CALENDAR = (By.CSS_SELECTOR, ".w-full.block.DatePickerCalendar_dayBtn__3Q4sI")
+    LINK_SCORE = (By.XPATH, "//a[text()='BOX SCORE']")

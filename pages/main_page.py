@@ -25,3 +25,6 @@ class MainPage(BasePage):
 
     def should_be_element_is_visible(self):
         assert self.is_element_present(MainPageLocators.MENU_ACCOUNT), "authorisation is not success"
+
+    def should_be_guest_can_click_link_games(self):
+        self.browser.find_element(*MainPageLocators.GAMES_LINK).click()

@@ -63,5 +63,5 @@ click any date with game, check text "BOX SCORE" is visible
 7) Click any date with game
 8) Check link with text "BOX SCORE" is visible
 
-Expected result: Text "BOX SCORE" is visible  
-Actual result: 
+Expected result: Link "BOX SCORE" is visible  
+Actual result: Link "BOX SCORE" is visible  
