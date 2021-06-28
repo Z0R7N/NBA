@@ -14,6 +14,7 @@ class MainPage(BasePage):
     def should_be_click_link_enter_sign_in(self):
         self.browser.find_element(*MainPageLocators.ENTER_SIGN_LINK).click()
 
+    # in Russia there is a redirect to another website address
     def should_be_correct_url(self):
         time.sleep(1)
         if self.is_element_present(MainPageLocators.NBA_LINK):
