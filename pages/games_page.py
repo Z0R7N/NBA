@@ -17,6 +17,7 @@ class GamesPage(BasePage):
                 element.click()
                 break
 
+    # finding a working link from many identical elements
     def element_has_games(self, element):
         if not element.get_attribute("disabled"):
             games = element.get_attribute("data-text")
@@ -26,3 +27,4 @@ class GamesPage(BasePage):
 
     def should_be_element_is_visible(self):
         assert self.browser.find_element(*GamesPageLocators.LINK_SCORE), "there is no link for SCORE or there is no games"
+        
