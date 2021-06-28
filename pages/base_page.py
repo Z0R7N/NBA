@@ -13,6 +13,7 @@ class BasePage():
     def open(self):
         self.browser.get(self.url)
 
+    # to check the presence of an element on the page
     def is_element_present(self, locator):
         try:
             self.browser.find_element(*locator)
@@ -25,6 +26,7 @@ class BasePage():
         element = self.browser.find_element(*locator)
         action.move_to_element(element).click().perform()
 
+    # returning a value from the text of an element
     def find_price_item(self, locator):
         time.sleep(1)
         price = self.browser.find_element(*locator).text
